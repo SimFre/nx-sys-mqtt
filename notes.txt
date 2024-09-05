@@ -1,0 +1,12 @@
+
+Prepare:
+rustup component add rust-src
+cargo install cargo-nx --git https://github.com/aarch64-switch-rs/cargo-nx
+rustup install nightly
+echo nightly > rust-toolchain
+
+Build with `cargo nx build`
+Uses:
+https://github.com/aarch64-switch-rs/cargo-nx/wiki
+https://github.com/aarch64-switch-rs/examples
+

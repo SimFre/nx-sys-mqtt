@@ -1,0 +1,33 @@
+[package]
+name = "nx-sys-mqtt"
+authors = ["SimFre"]
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nx = { git = "https://github.com/aarch64-switch-rs/nx", features = [
+    "services",
+    "input",
+    "fs",
+] }
+rumqttc = { version = "0.24.0", features = ["websocket"] }
+#ui2d = { path = "../ui2d" }
+
+
+# For help / more information, see https://github.com/aarch64-switch-rs/cargo-nx/wiki
+
+[package.metadata.nx.nro]
+icon = "icon.jpg"
+
+[package.metadata.nx.nro.nacp]
+default_name = "nx-sys-mqtt"
+default_author = "aarch64-switch-rs authors"
+version = "0.1.0"
+application_id = "0x01bbf33702290000"
+video_capture = false
+
+[[bin]]
+name = "nx-sys-mqtt"
+path = "src/main.rs"
+test = false
+bench = false
