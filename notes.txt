@@ -4,6 +4,9 @@ rustup component add rust-src
 cargo install cargo-nx --git https://github.com/aarch64-switch-rs/cargo-nx
 rustup install nightly
 echo nightly > rust-toolchain
+sudo apt-get install gcc-aarch64-linux-gnu
+
+
 
 Build with `cargo nx build`
 Uses:
